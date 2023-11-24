@@ -25,7 +25,6 @@ def get_empire_sums(wimmer_empire,drop_columns=['cowcode','country','year']):
     sum_0_country_years=wimmer_empire_merge[wimmer_empire_merge['sum']==0]
     sum_2_country_years=wimmer_empire_merge[wimmer_empire_merge['sum']==2]
     sum_0_2_country_years=wimmer_empire_merge[(wimmer_empire_merge['sum']!=0) & (wimmer_empire_merge['sum']!=1) & (wimmer_empire_merge['sum']!=2)]
-    # with pd.option_context('display.max_rows', None, 'display.max_columns', 100):
     total_years=sum_1_country_years.size+sum_0_country_years.size+sum_2_country_years.size+sum_0_2_country_years.size
     return (sum_1_country_years.size/total_years, sum_0_country_years.size/total_years,sum_2_country_years.size/total_years, sum_0_2_country_years.size/total_years),sum_1_country_years, sum_0_country_years, sum_2_country_years, sum_0_2_country_years
 
@@ -68,7 +67,6 @@ def get_country_empire_year_ranges_2(df):
     empire2_list=[]
     empire3_list=[]
     emp=df.iloc[:,3:-1]
-    # print(emp.columns)
     country_list=[]
     for country in country_list_unique:
         country_years=df.loc[df['country']==country]['year'].to_list()
@@ -83,14 +81,9 @@ def get_country_empire_year_ranges_2(df):
             max_empires=empires=emp.loc[(df['country']==country) & (df['year']==max_year)].columns[emp.loc[(df['country']==country) & (df['year']==max_year)].any()].to_list()
             empires=emp.loc[(df['country']==country) & (df['year'].isin(years))].columns[emp.loc[(df['country']==country) & (df['year'].isin(years))].any()].to_list()
             if min_empires !=max_empires: #suggests changes in empire status (even if sum is the same), need to split these into the different empire states
-                # print(min_empires)
-                # print(max_empires)
                 change_years=find_years_with_column_changes(df.loc[(df['country']==country) & (df['year'].isin(years))], empires)
-                # print(country)
-                # print(change_years)
                 change_years.insert(0,min_year)
                 change_years.append(max_year)
-                # print(change_years)
                 range_loop=range(len(change_years[:-1]))
                 for i in range(len(change_years[:-1])): #loop over years where changes occur
                     min_year=change_years[i]
@@ -133,7 +126,6 @@ def update_colonization_data_2(colonization_df, empire_df):
     # Iterate through the first dataframe
     for _, row in colonization_df.iterrows():
         country = row['country']
-        # print(country)
         start_year = row['min year']
         end_year = row['max year']
         empire_country = row['empire1']
@@ -150,7 +142,6 @@ def update_colonization_data_2(colonization_df, empire_df):
             other_columns=updated_empire_df.columns.difference(['cowcode','country','year',empire_country,empire_country2,empire_country3])
         #Assign empire values based on number of empires
         if pd.isna(empire_country2) and pd.isna(empire_country3):
-            # print('yes')
             updated_empire_df.loc[mask, empire_country] = 1
         elif pd.isna(empire_country3):
             if empire_country=='Ottoman': #if Ottoman, use ratio to find other share
@@ -192,7 +183,6 @@ def update_colonization_data_not_0_1_2(colonization_df, empire_df):
         # Set the corresponding column value to 1 for the empire country during the colonization years
         if not pd.isna(empire_country2):
             if empire_country=='Ottoman':
-                # updated_empire_df.loc[mask, empire_country] = updated_empire_df.loc[mask, empire_country]
                 updated_empire_df.loc[mask, empire_country2] = 1-updated_empire_df.loc[mask, empire_country]
             else:
                 updated_empire_df.loc[mask, empire_country] = 0.5
@@ -268,7 +258,7 @@ def find_years_with_column_changes(dataframe, columns_to_check):
     current_values = None
 
     for index, row in dataframe.iterrows():
-        year = row['year']  # Assuming 'Year' is the column with the years, replace it with your actual year column
+        year = row['year'] 
         values = row[columns_to_check]
 
         if current_values is None:
