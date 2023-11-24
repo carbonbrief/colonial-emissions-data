@@ -1,0 +1,12 @@
+,country,min year,max year,empire1,empire2,empire3,note
+0,Poland,1918.0,1918.0,KKAustria,Romanov,,removed SU because did not officially exist yet and Russia cannot exist as two entities simultaneously
+1,Yugoslavia,1850.0,1867.0,Ottoman,KKAustria,
+2,Yugoslavia,1868.0,1877.0,Ottoman,KKAustria,
+3,Yugoslavia,1878.0,1878.0,Ottoman,KKAustria,
+4,Yugoslavia,1879.0,1911.0,Ottoman,KKAustria,,not actually indepstate before 1918 so removing those
+5,Yugoslavia,1912.0,1917.0,Ottoman,KKAustria,,not actually indepstate before 1918 so removing those
+6,Romania,1850.0,1859.0,Ottoman,KKAustria,
+7,Cameroon,1960.0,1960.0,indepstate,French,British
+8,Somalia,1884.0,1889.0,Ottoman,British,
+9,Saudi Arabia,1850.0,1916.0,Ottoman,indepstate,,based on Wimmer partly Ottoman - so rest is indepstate
+10,Yemen,1850.0,1918.0,Ottoman,British,

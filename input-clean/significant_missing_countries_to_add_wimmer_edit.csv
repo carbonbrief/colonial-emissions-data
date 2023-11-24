@@ -1,0 +1,20 @@
+,country,min year,max year,empire1,empire2,empire3,note
+0,Curaçao,1850,2001,Netherlands,,, still part of Netherlands today
+1,Hong Kong,1850,1997,British,,,became a british possession in 1841 - handover to china on July 1st 1997 so assume British until end of that year
+1,Hong Kong,1998,2001,China,,,as above
+2,Haiti,1850,1915,indepstate,,,indepstate since decarling indep from france in 1804
+2,Haiti,1916,1934,United States,,, occupied by USA between 28 July 1915 and 1 Aug 1934
+2,Haiti,1935,2001,indepstate,,, indepstate since then although lot of turmoil and current constitution only since 1987
+3,Jamaica,1850,1962,British,,, gained indep from UK in Aug 1962
+3,Jamaica,1963,2001,indepstate,,, as above
+4,Lebanon,1850,1920,Ottoman,,,transferred from Ottoman control to French control in Sept 1920 so Ottoman until end of that year
+4,Lebanon,1921,1945,French,,,as above - French mandate ended in Oct 1945 so indep since 1946
+4,Lebanon,1946,2001,indepstate,,,as above
+5,Luxembourg,1850,2001,indepstate,,,indep since Treaty of London in April 1839
+6,Singapore,1850,1963,British,,, until Aug 1963 - Malaysia gained independence in 1957
+6,Singapore,1964,2001,indepstate,,, actually part of Malaysia until 1965 but indep for our purposes
+7,South Sudan,1850,1881,indepstate,,,matched to Sudan in Wimmer
+7,South Sudan,1882,1955,British,,,matched to Sudan in Wimmer
+7,South Sudan,1956,2001,British,,,matched to Sudan in Wimmer
+8,Trinidad and Tobago,1850,1957,British,,,colonised by British and gained independence on 3 Jan 1958 so British until 1957
+8,Trinidad and Tobago,1958,2001,indepstate,,,actually part of West Indies federation until 1962 but indep for our purposes

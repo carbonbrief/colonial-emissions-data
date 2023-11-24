@@ -1,0 +1,13 @@
+,country,min year,max year,empire1,empire2,empire3,note
+53,Serbia,1850.0,1877.0,Ottoman,,,same as Bosnia
+54,Serbia,1878.0,1917.0,indepstate,,,gained independence from Ottoman Empire in July 1878 so indepstate from 1879 (but setting 1878 to be consistent with Wimmer) - assume that post Yugoslavia Serbia indep as Serbia and Montenegro
+55,Serbia,1918.0,1991.0,Yugoslavia,,,same as Bosnia
+56,Serbia,1992.0,2001.0,indepstate,,,same as Bosnia
+53,Montenegro,1850.0,1877.0,Ottoman,,,same as Bosnia
+54,Montenegro,1878.0,1917.0,indepstate,,,gained independence from Ottoman Empire in July 1878 so indepstate from 1879 (but setting 1878 to be consistent with Wimmer) - assume that post Yugoslavia Montenegro indep as Serbia and Montenegro
+55,Montenegro,1918.0,1991.0,Yugoslavia,,,same as Bosnia
+56,Montenegro,1992.0,2001.0,indepstate,,,same as Bosnia
+53,Kosovo,1850.0,1912.0,Ottoman,,,Kosovo part of Ottoman empire until Treaty of London in Jan 1913 so Ottoman until 1912
+54,Kosovo,1913.0,1917.0,indepstate,,,actually part of Serbia but not colonised so treated as indepstate for our purposes - assume that post Yugoslavia Kosovo is independent even if only declared indep in 2008 and was a war zone in the 90s - still disputed territory but indep for our purposes
+55,Kosovo,1918.0,1991.0,Yugoslavia,,,same as Bosnia
+56,Kosovo,1992.0,2001.0,indepstate,,,same as Bosnia
