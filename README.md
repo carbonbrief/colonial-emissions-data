@@ -2,7 +2,7 @@ The data behind the CarbonBrief article: [Revealed: Colonial rule nearly doubles
 
 The main file to run is "colonial-emissions-2023-clean", which is a Jupyter notebook.
 This Jupyter notebook processes the data in the input folder "input-clean" to produce the outputs in the output folder "output-clean".
-The Jupyter notebook uses some additional functions which are defined in "functions.py"
+The Jupyter notebook uses some additional functions which are defined in "functions.py".
 
 The .csv outputs from the notebook are the following, and include the data to plot all the graphics in the article:
 - __article_summary_table_2023__: summary data for all countries above population 1 million in 2023, as shown in the summary table that is in the article
@@ -18,4 +18,4 @@ The .csv outputs from the notebook are the following, and include the data to pl
 - __plot_top20_EU-UK__: numbers used to plot ranking of countries + EU-UK by colonial emissions in the article
 - __plot_UK__: numbers used to plot breakdown of UK' territorial and colonial emissions in the article
 
-Any questions, please contact Verner at verner.viisainen@carbonbrief.org
+Any questions, please contact Verner at verner.viisainen@carbonbrief.org.
