@@ -2,13 +2,13 @@ The data behind the CarbonBrief article: [Revealed: Colonial rule nearly doubles
 
 The main file to run is "colonial-emissions-2023-clean", which is a Jupyter notebook.
 This Jupyter notebook processes the data in the input folder "input-clean" to produce the outputs in the output folder "output-clean".
-The Jupyter notebook uses some additional functions which are defined in "functions.py".
+The Jupyter notebook uses some additional functions which are defined in "functions.py". The required python packages are listed in "requirements.txt".
 
 The .csv outputs from the notebook are the following, and include the data to plot all the graphics in the article:
 - __article_summary_table_2023__: summary data for all countries above population 1 million in 2023, as shown in the summary table that is in the article
 - __full_summary_table_2023__: additional summary data for all countries above population 1 million in 2023, including split of fossil and land emissions
 - __full_year_emissions_summary_table_1850_2023__: yearly emissions data for all countries from 1850 to 2023, including when countries were independent and/or controlled
-- __territorial_rule_database_1850_2023__: yearly territorial rule data from 1850 to 2023, showing who was in control of each territory and therefore how emissions were allocated for each year
+- __territorial_rule_database_1850_2023__: yearly territorial rule data from 1850 to 2023, showing who was in control of each territory and therefore how emissions were allocated for each year (row sum =1)
 - __plot_carbon_budget__: numbers used to plot the carbon budget remaining in the animation in the article
 - __plot_consumption__: numbers used to plot ranking of countries by colonial+consumption emissions in the article
 - __plot_cumulative_per_capita__: numbers used plot the cumulative per yearly capita ranking in the article
